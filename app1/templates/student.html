@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row" style="height: 500px;">
+    <div class="col-sm-6"  style="background-color: #343a40; margin:3% auto; text-align: center;">
+        <form action="{% url 'add_student'%}" class="form" method="POST">
+            <h1 style="color: white; margin-top: 5%; margin-bottom: 3%;">Add Student</h1>
+            {% csrf_token%}
+            <input type="text" class="form-control" name="name" placeholder="Name"><br>
+            <input type="text" class="form-control" name="addr" placeholder="Address"><br>
+            <input type="text" class="form-control" name="age" placeholder="Age"><br>
+            <input type="date" class="form-control" name="date" placeholder="Date"><br>
+            <select name="sel" id="">
+                {% for course in courses %}
+                <option value="{{course.id}}">{{ course.course_name}}</option>
+                {%endfor%}
+            </select><br>
+            <input type="submit" class="btn btn-light" style="margin-top: 3%;" value=" Submit">
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12" style="text-align:center">
+      <a href="{% url 'show'%}"><button type="submit" class="btn btn-dark" >Add Student</button></a>
+    </div>
+  </div>
+{% endblock %}

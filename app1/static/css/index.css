@@ -1,8 +1,12 @@
-body{
-    background-color: rgb(252, 0, 0);
-    
+.container{
+    background-image:url('static/image/wp2679108.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-#lal{
+#aj{
     color: blue;
-    text-align: center;
+}
+.navbar-nav {
+    margin-left: auto;
 }

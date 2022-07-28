@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<style>
+    #div_frnd{
+        width:100%;
+        height:600px;
+        background-color: transparent;
+        margin-top:-600px;
+        position: relative;
+    }
+
+    #div_frnd:hover{
+        width:100%;
+        height:600px;
+        background-color: rgba(0, 0, 0, 0.7);
+        margin-top:-600px;
+        position: relative;
+    }
+    #main_hd{
+        text-align: center; 
+        text-align: center;
+        color: transparent;
+        margin-top: 200px;
+ 
+
+    }
+    #main_hd:hover{
+        text-align: center; 
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+
+    }
+
+</style>
+
+<div class="container-fluid" style=" margin-left: 0; margin-right: 0;">
+    <!--Carosoul-->
+
+    <div class="row">  
+        <div class="col-12" >
+
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner" >
+                <div class="carousel-item">
+                    <img src="{% static 'image\banner-1.jpeg'%}" alt="Los Angeles" style="width: 100%;height:600px">
+                </div>
+                <div class="carousel-item">
+                    <img src=" {% static 'image\banner 2.webp'%}" alt="Chicago"  style="width: 100%;height:600px">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'image\banner 3.webp'%}" alt="New York"  style="width: 100%;height:600px">
+                </div>
+                <div class="carousel-item active">
+                    <img src="{% static 'image\banner 4.webp'%}" alt="Los Angeles"  style="width: 100%;height:600px">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'image\banner5.webp'%}" alt="Chicago"  style="width: 100%;height:600px">
+                </div>
+                </div>
+            
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </a>
+            
+            </div>
+        
+        </div>
+        <div  class="cpl-sm-12" id="div_frnd">
+            <h1 id="main_hd">NATIONWIDE<br>HEAVY CIVIL<br>CONSTRUCTION<br>COMPANY</h1>
+          
+        </div>
+    </div>
+    <div class="row" style="margin-top: 5%;" >
+        <div class="col-12">
+            <h1 style="text-align: center; font-size:50px; font-weight: bolder;">MARKETS SERVED</h1>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}

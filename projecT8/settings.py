@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app1',
-    'crispy_forms',
+    
 ]
 
 MIDDLEWARE = [
@@ -78,12 +78,8 @@ WSGI_APPLICATION = 'projecT8.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'abcuniversity',
-        'USER':'root',
-        'PASSWORD':'',
-        'HOST':'localhost',
-        'PORT': '3306'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 

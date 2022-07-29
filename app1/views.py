@@ -11,6 +11,9 @@ from  django.contrib.auth.decorators import login_required
 def about(request):
     return render(request, 'Home.html')
 
+def civil_work(request):
+    return render(request, 'civil_work.html')
+
 
 
 

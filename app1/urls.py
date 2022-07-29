@@ -6,5 +6,6 @@ from.import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.about, name='about'),
+    path('civil_work', views.civil_work, name='civil_work'),
     
 ]

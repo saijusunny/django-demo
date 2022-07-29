@@ -1,0 +1,362 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<style>
+    #div_frnd{
+        width:100%;
+        height:600px;
+        background-color: transparent;
+        margin-top:-600px;
+        position: relative;
+    }
+
+    #div_frnd:hover{
+        width:100%;
+        height:600px;
+        background-color: rgba(0, 0, 0, 0.7);
+        margin-top:-600px;
+        position: relative;
+    }
+    #main_hd{
+        text-align: center; 
+        text-align: center;
+        color: transparent;
+        margin-top: 20%;
+ 
+
+    }
+    #main_hd:hover{
+        text-align: center; 
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+
+    }
+   
+    
+
+</style>
+
+<div class="container-fluid" style=" margin-left: 0; margin-right: 0;">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner" >
+                <div class="carousel-item">
+                    <img src="{% static 'image\banner-1.jpeg'%}" alt="Los Angeles" style="width: 100%;height:600px">
+                </div>
+                <div class="carousel-item">
+                    <img src=" {% static 'image\banner 2.webp'%}" alt="Chicago"  style="width: 100%;height:600px">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'image\banner 3.webp'%}" alt="New York"  style="width: 100%;height:600px">
+                </div>
+                <div class="carousel-item active">
+                    <img src="{% static 'image\banner 3.webp'%}" alt="Los Angeles"  style="width: 100%;height:600px">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'image\banner5.webp'%}" alt="Chicago"  style="width: 100%;height:600px">
+                </div>
+                </div>
+            
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                </a>
+            
+            </div>
+        
+        </div>
+        <div  class="cpl-sm-12" id="div_frnd">
+            <h1 id="main_hd">Civil Works</h1>
+          
+        </div>
+    </div>
+    <div class="row" style="background-color: green; color:white; margin-top:2%">
+        <div class="col-sm-12">
+            <h1 style="text-align: center;">KEY DESIGN-BUILD SECTORS</h1>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 2%;">
+        <img class="col-sm-3" src="{% static 'image\ab1.webp'%}" alt="sans"/>
+        
+        <img class="col-sm-3" src="{% static 'image\ab2.webp'%}" alt="sans"/>
+
+        <img class="col-sm-3" src="{% static 'image\ab3.webp'%}" alt="sans"/>
+        <img class="col-sm-3" src="{% static 'image\ab4.webp'%}" alt="sans"/>
+        <div class="col-sm-3" style="margin-top: -23%; ;  position: relative;">
+            <h4 style="background-color: green; color: white; text-align: center;margin-left: 5%; margin-right: 5%; box-shadow: 0 0 8px 0 black;">Work Space</h4>
+        </div>
+        <div class="col-sm-3" style="margin-top: -23%;  position: relative;">
+            <h4 style="background-color: green; color: white; text-align: center;margin-left: 5%; margin-right: 5%;box-shadow: 0 0 8px 0 black;">Financial Facilities</h4>
+        </div>
+        <div class="col-sm-3" style="margin-top: -23%;  position: relative;">
+            <h4 style="background-color: green; color: white; text-align: center;margin-left: 5%; margin-right: 5%;box-shadow: 0 0 8px 0 black;">Multi Family</h4>
+        </div>
+        <div class="col-sm-3" style="margin-top: -23%;  position: relative;">
+            <h4 style="background-color: green; color: white; text-align: center;margin-left: 5%; margin-right: 5%;box-shadow: 0 0 8px 0 black;">Education</h4>
+        </div>
+        
+        
+    </div>
+    
+    
+  
+
+
+    <div class="row" style="margin-top:5%;">
+        <div class="col-sm-12">
+            <div class="card" style="flex-direction: row;">
+                <div class="row card-body">
+                    <div class="col-sm-6" >
+                        <div class="row">
+                            <img class="col-sm-6" src="{% static 'image\Solar Panel Farm in Darwin IL.webp'%}" alt="sans"/>
+                            <img class="col-sm-6" src="{% static 'image\bd1.webp'%}" alt="sans"/>
+                        </div>
+                        <div class="row" style="margin-top:5%;">
+                            <img class="col-sm-6" src="{% static 'image\bd4.webp'%}" alt="sans"/>
+                            <img class="col-sm-6" src="{% static 'image\bd5.webp'%}" alt="sans"/>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-sm-6" style="margin-top: 10%;">
+                      <h5 class="card-title" style="color: rgb(255, 255, 255); background-color:green;font-weight: bold;">WORKPLACE >>></h5>
+                       <p class="card-text" style="text-align: justify;">
+
+                        Our Building Group has extensive history building state-of-the-art workplace facilities across the country. Our team understands 
+                        how the workplace atmosphere shapes the tone of a company's culture, and we come to the table with harmonious solutions bridging design, functionality, and construction. We are well versed in managing such spaces within tight timelines and budgets.
+                       </p>
+                       <a href="#" class="btn btn-success">View More...</a>
+                    </div>
+                    
+                </div>
+            </div>
+    </div>
+
+    <div class="row" style="margin-top:5%;">
+        <div class="col-sm-12">
+            <div class="card" style="flex-direction: row;">
+                <div class="row card-body">
+                    
+                    
+                    <div class="col-sm-6" style="margin-top: 8%;">
+                      <h5 class="card-title" style="color: rgb(255, 255, 255); background-color:green;font-weight: bold;">FINANCIAL FACILITIES >>></h5>
+                       <p class="card-text" style="text-align: justify;">
+
+                        Our Financial Facilities group brings to the table a wealth of expertise, experience, and innovative solutions. We are a proud plan-design-build firm offering the complete experience for financial institutions: strategic planning, architecture, and construction. Value-added services include feasibility studies, market research & analytics, site selection & analysis, branding strategies, technological 
+                        upgrades, and design development. Reach out to our FinFac experts today.
+                       </p>
+                       <a href="#" class="btn btn-success">View More...</a>
+                    </div>
+                    <div class="col-sm-6" >
+                        <div class="row">
+                            <img class="col-sm-6" src="{% static 'image\bs_cn1.jpg'%}" alt="sans"/>
+                            <img class="col-sm-6" src="{% static 'image\bs_cn2.jpg'%}" alt="sans"/>
+                        </div>
+                        <div class="row" style="margin-top:5%;">
+                            <img class="col-sm-6" src="{% static 'image\bs_cn3.jpg'%}" alt="sans"/>
+                            <img class="col-sm-6" src="{% static 'image\bs_cn4.jpg'%}" alt="sans"/>
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+            </div>
+    </div>
+    <div class="row" style="background-color:green; color:white; margin-top:5%; ">
+        <div class="col-sm-12" style="margin-left: 73%;">
+            <h1 >Our <span style="color: green;"> Service >>> </span></h1>
+        </div>
+    </div>
+    <div class="row" style="margin-top:5%; background-color: green; background-image: url('static/image/civil-engineering.jpg');">
+        <div class="col-sm-3" style="margin-top: 2%;margin-bottom:2%">
+            <div class="card sm-3" style="width: 18rem;height: auto;text-align: center;">
+                
+                <div class="card-body" style=" box-shadow: 0 0 8px 0 black;">
+                    <h5 class="card-title"style="color: green;font-weight: bold;">Civil Works</h5>
+                    <p class="card-text">
+                        Excellent & Specialized Civil Works</p>
+              
+                    <a href="#"><button class="btn btn-success">View More..</button> </a> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+            <div class="card sm-3" style="width: 18rem;height: auto;text-align: center;">
+                <div class="card-body" style=" box-shadow: 0 0 8px 0 black;">
+                    <h5 class="card-title"style="color: green;font-weight: bold;">Dismantling & Demolishing</h5>
+                    <p class="card-text">
+                        Demolish & dismantling structures after its life span by pre planning & controlled demolition methods.                    </p>
+              
+                    <a href="#"><button class="btn btn-success">View More..</button> </a> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+            <div class="card sm-3" style="width: 18rem;height: auto;text-align: center;">
+                <div class="card-body" style=" box-shadow: 0 0 8px 0 black;">
+                    <h5 class="card-title"style="color: green;font-weight: bold;">Road Works</h5>
+                    <p class="card-text">
+                        All types of road development.                    </p>
+              
+                    <a href="#"><button class="btn btn-success">View More..</button> </a> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+            <div class="card sm-3" style="width: 18rem;height: auto;text-align: center;">
+                <div class="card-body" style=" box-shadow: 0 0 8px 0 black;">
+                    <h5 class="card-title"style="color: green;font-weight: bold;">Painting Works</h5>
+                    <p class="card-text">
+                        Industrial & residential works including high rise buildings.                    </p>
+              
+                    <a href="#"><button class="btn btn-success">View More..</button> </a> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+            <div class="card sm-3" style="width: 18rem;height: auto;text-align: center;">
+                <div class="card-body" style=" box-shadow: 0 0 8px 0 black;">
+                    <h5 class="card-title"style="color: green;font-weight: bold;">Aluminum Fabrication</h5>
+                    <p class="card-text">
+                        Providing aluminum frame boards partition work, doors & windows, structure glazing for enhancing the look & feel of establishments & offices.                    </p>
+              
+                    <a href="#"><button class="btn btn-success">View More..</button> </a> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+            <div class="card sm-3" style="width: 18rem;height: auto;text-align: center;">
+                <div class="card-body" style=" box-shadow: 0 0 8px 0 black;">
+                    <h5 class="card-title"style="color: green;font-weight: bold;">Archaeology & Heritage</h5>
+                    <p class="card-text">
+                        Archaeological sites and heritages are part of our shared past. Protecting these physical validations of our past using various construction materials.                    </p>
+              
+                    <a href="#"><button class="btn btn-success">View More..</button> </a> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+            <div class="card sm-3" style="width: 18rem;height: auto;text-align: center;">
+                <div class="card-body" style=" box-shadow: 0 0 8px 0 black;">
+                    <h5 class="card-title"style="color: green;font-weight: bold;">River Bank Protection</h5>
+                    <p class="card-text">
+                        Protect the river bank from degradation and strengthening the bank using geotextile.                    </p>
+              
+                    <a href="#"><button class="btn btn-success">View More..</button> </a> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"style="margin-top: 2%; margin-bottom:2%">
+            <div class="card sm-3" style="width: 18rem;height: auto;text-align: center;">
+                <div class="card-body" style=" box-shadow: 0 0 8px 0 black;">
+                    <h5 class="card-title"style="color: green;font-weight: bold;">Roofing & Fabrication</h5>
+                    <p class="card-text">
+                        New roofing solutions with advanced roofing technology.                    </p>
+              
+                    <a href="#"><button class="btn btn-success">View More..</button> </a> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- #======================================================================================3 rd row -->
+    <div class="row" style=" background-color: green;  background-image: url('static/image/cilvi2.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+        <div class="col-sm-3" style="margin-top: 2%;margin-bottom:2%">
+            <div class="card sm-3" style="width: 18rem;height: auto;text-align: center;">
+                
+                <div class="card-body" style=" box-shadow: 0 0 8px 0 black;">
+                    <h5 class="card-title"style="color: green;font-weight: bold;">Drainage Works</h5>
+                    <p class="card-text">Set out the plans of roads street gutters, drainages, culverts & sewers involved in construction operations.</p>
+              
+                    <a href="#"><button class="btn btn-success">View More..</button> </a> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+            <div class="card sm-3" style="width: 18rem;height: auto;text-align: center;">
+                <div class="card-body" style=" box-shadow: 0 0 8px 0 black;">
+                    <h5 class="card-title"style="color: green;font-weight: bold;">Dismantling & Demolishing</h5>
+                    <p class="card-text">
+                        Demolish & dismantling structures after its life span by pre planning & controlled demolition methods.                    </p>
+              
+                    <a href="#"><button class="btn btn-success">View More..</button> </a> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+            <div class="card sm-3" style="width: 18rem;height: auto;text-align: center;">
+                <div class="card-body" style=" box-shadow: 0 0 8px 0 black;">
+                    <h5 class="card-title"style="color: green;font-weight: bold;">Epoxy & 3D Flooring</h5>
+                    <p class="card-text">Self levelling epoxy floors in manufacturing buildings, warehouses, showrooms, kitchen, garages with 3D modelling</p>
+              
+                    <a href="#"><button class="btn btn-success">View More..</button> </a> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+            <div class="card sm-3" style="width: 18rem;height: auto;text-align: center;">
+                <div class="card-body" style=" box-shadow: 0 0 8px 0 black;">
+                    <h5 class="card-title"style="color: green;font-weight: bold;">Fiber Reinforced Plastic (FRP) Door</h5>
+                    <p class="card-text">Good substitute for wooden doors & known for its high weather, water rot resistance. </p>
+              
+                    <a href="#"><button class="btn btn-success">View More..</button> </a> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+            <div class="card sm-3" style="width: 18rem;height: auto;text-align: center;">
+                <div class="card-body" style=" box-shadow: 0 0 8px 0 black;">
+                    <h5 class="card-title"style="color: green;font-weight: bold;">Fish Pond & Geotextile</h5>
+                    <p class="card-text">
+                        Manufacturer and supplier of SQ membrane pond liner and SQ membrane sheet fish water tank.</p>              
+                    <a href="#"><button class="btn btn-success">View More..</button> </a> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+            <div class="card sm-3" style="width: 18rem;height: auto;text-align: center;">
+                <div class="card-body" style=" box-shadow: 0 0 8px 0 black;">
+                    <h5 class="card-title"style="color: green;font-weight: bold;">Membrane Water Proofing</h5>
+                    <p class="card-text">
+                        Water tight material laid above the structural slab below the finish tile.</p>              
+                    <a href="#"><button class="btn btn-success">View More..</button> </a> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+            <div class="card sm-3" style="width: 18rem;height: auto;text-align: center;">
+                <div class="card-body" style=" box-shadow: 0 0 8px 0 black;">
+                    <h5 class="card-title"style="color: green;font-weight: bold;">Vacuum Dewatered Flooring (VDF)</h5>
+                    <p class="card-text">
+                        Special technique to do concrete flooring to increase compressive strength, tensile strength, abrasion resistance and to minimize shrinkage and floor wraps.                  </p>
+              
+                    <a href="#"><button class="btn btn-success">View More..</button> </a> 
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3"style="margin-top: 2%; margin-bottom:2%">
+            <div class="card sm-3" style="width: 18rem;height: auto;text-align: center;">
+                <div class="card-body" style=" box-shadow: 0 0 8px 0 black;">
+                    <h5 class="card-title"style="color: green;font-weight: bold;">Landscaping Works</h5>
+                    <p class="card-text">Making of garden or other piece of land more attractive by altering the existing design adding ornamental features & planting trees & shrubs. </p>
+              
+                    <a href="#"><button class="btn btn-success">View More..</button> </a> 
+                </div>
+            </div>
+        </div>
+
+    </div>
+        
+
+</div>
+{% endblock %}
